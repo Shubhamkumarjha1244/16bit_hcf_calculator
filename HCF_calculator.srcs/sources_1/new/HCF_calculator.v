@@ -27,14 +27,15 @@ input[15:0] num2;
 output reg [15:0] out;
 reg[15:0] num1_reg,num2_reg;
 
-    initial
+
+    begin
+    
+    initial @(posedge clk)
     begin
     num1_reg=num1;
     num2_reg=num2;
     end
-    
-    
-    
+ 
     always @(posedge clk)
         if(num1_reg!=16'b0000000000000000 & num2_reg!=16'b0000000000000000 & num1_reg>num2_reg)
                 num1_reg=num1_reg%num2_reg;
@@ -48,5 +49,9 @@ reg[15:0] num1_reg,num2_reg;
             else
                 if(num2_reg==16'b0000000000000000)
                     out=num1_reg;
+                    
+                    
+                    
+     end
     
     endmodule

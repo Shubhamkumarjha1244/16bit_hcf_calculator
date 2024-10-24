@@ -27,15 +27,13 @@ reg[15:0] num2;
 wire[15:0] out;
 HCF_calculator dut(clk,num1,num2,out);
 
-initial 
+initial
     begin
-    num1=16'b0000000011111111;
-    num2=16'b0000000000000011;
+    num1=598;
+    num2=874;
     end
-    
-    
-    
- always 
+       
+ always
     #5 clk=~clk;
         
 endmodule
