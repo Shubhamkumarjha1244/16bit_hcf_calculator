@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../HCF_calculator.srcs/sources_1/new/HCF_calculator.v" \
+"../../../../HCF_calculator.srcs/sim_1/new/HCF_calculator_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,4 @@
+Running: xsim.dir/HCF_calculator_tb_behav/xsimk.exe -simmode gui -wdb HCF_calculator_tb_behav.wdb -simrunnum 0 -socket 51293
+Design successfully loaded
+Design Loading Memory Usage: 8052 KB (Peak: 8052 KB)
+Design Loading CPU Usage: 0 ms
